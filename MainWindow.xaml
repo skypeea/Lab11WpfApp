@@ -1,0 +1,139 @@
+﻿<Window x:Class="Lab11WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab11WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="696" Width="800">
+    <Window.Resources>
+        <EllipseGeometry x:Key="Ellipse1" Center="550 200" RadiusX="100" RadiusY="100"/>
+        <EllipseGeometry x:Key="Ellipse2" Center="550 200" RadiusX="130" RadiusY="130"/>
+        <Style TargetType="Path">
+            <Setter Property="Fill" Value="Red"/>
+            <Setter Property="Stroke" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid RenderTransformOrigin="0.517,0.758" >
+        <Path Data="M484.0084,129.15137 L496.15244,94.72328 C496.15244,94.72328 534.61585,79.951156 541.70122,101.40445 548.78659,122.85774 563.65433,106.62487 565.69648,129.04971 567.73863,151.47456 584.46974,166.76422 553.01183,162.68698 521.55392,158.60973 506.58964,143.66288 506.58964,143.66288 L483.20343,128.33365" HorizontalAlignment="Left" Height="73" Margin="108,136,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="89">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.793,0.782" StartPoint="0.341,0.31">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFACD400" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M578,98.04" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="578,98,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="1"/>
+
+        <Path   Margin="270,4,310,641" Height="35" Stretch="Fill" >
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="130" CenterX="150" CenterY="150"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Data>
+                <RectangleGeometry Rect="10,130,240,30" />
+            </Path.Data>
+        </Path>
+        <Path >
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Xor"
+                                  Geometry1="{StaticResource Ellipse1}"
+                                  Geometry2="{StaticResource Ellipse2}"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path48" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M240.14 288.54L341.53 288.54" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path50" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M341.53 288.54L400.01 254.78" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path52" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M240.14 288.54L240.14 250.78Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path54" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M341.53 288.54L341.53 190.76Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path56" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M400.01 254.78L400.01 156.99Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path58" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M290.83 190.76L341.53 190.76" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path60" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M341.53 190.76L400.01 156.99" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path62" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M298.62 156.99L400.01 156.99" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path64" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M269.38 173.87L298.62 156.99" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path66" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M290.83 190.76L319.65 174.12" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path68" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M319.65 174.12L269.38 173.87" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path70" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M290.83 190.76L290.83 237.23Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path72" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M290.83 237.23L200.1 237.23" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path74" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M200.1 237.23L200.1 250.78Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path76" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M200.1 250.78L240.14 250.78" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path78" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M200.1 237.23L269.38 197.23" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path80" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M269.38 173.87L269.38 220.35Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path82" StrokeThickness="0.5" Stroke="#000000">
+            <Path.Data>
+                <PathGeometry Figures="M269.38 220.35L290.83 220.35" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+    </Grid>
+</Window>
